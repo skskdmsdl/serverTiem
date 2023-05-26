@@ -20,3 +20,5 @@ const ServerTime = () => {
     </View>
   );
 };
+
+export default ServerTime;
