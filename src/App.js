@@ -16,7 +16,6 @@ export default function App() {
     Alert.alert('입력한 URL: ', url);
   };
 
-
   return (
     <View style={styles.container}>
       <TextInput
@@ -25,7 +24,7 @@ export default function App() {
         onChangeText={handleUrlChange}
         value={url}
       />
-      <Button title="확인" onPress={handlePress} />
+      <Button title="입력" onPress={handlePress} />
       <ServerTime />
       <StatusBar style="auto" />
     </View>
