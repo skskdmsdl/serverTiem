@@ -16,7 +16,7 @@ const ServerTime = () => {
 
   return (
     <View>
-      <Text>현재 시간: {currentTime.toLocaleString()}</Text>
+      <Text>서버 시간: {currentTime.toLocaleString()}</Text>
     </View>
   );
 };
