@@ -1,5 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text } from 'react-native';
+import * as Notifications from 'expo-notifications';
+
+Notifications.setNotificationHandler({
+  handleNotification: async () => ({
+    shouldShowAlert: true,
+    shouldPlaySound: false,
+    shouldSetBadge: false,
+  }),
+});
 
 const ServerTime = () => {
   const [currentTime, setCurrentTime] = useState(new Date());
