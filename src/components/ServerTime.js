@@ -22,8 +22,23 @@ const ServerTime = () => {
       setCurrentTime(new Date());
     }, 1000);
 
+    // notification
+    registerForPushNotificationsAsync().then(token => setExpoPushToken(token));
+
+    notificationListener.current = Notifications.addNotificationReceivedListener(notification => {
+      setNotification(notification);
+    });
+
+    responseListener.current = Notifications.addNotificationResponseReceivedListener(response => {
+      console.log(response);
+    });
+
     return () => {
       clearInterval(timer);
+
+      // notification
+      Notifications.removeNotificationSubscription(notificationListener.current);
+      Notifications.removeNotificationSubscription(responseListener.current);
     };
   }, []);
 
