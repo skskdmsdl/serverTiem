@@ -63,11 +63,10 @@ const ServerTime = () => {
     <View>
       <Text>서버 시간: {currentTime.toLocaleString()}</Text>
     </View>
-    <Button
-      title="Press to schedule a notification"
-      onPress={async () => {
-        await schedulePushNotification();
-      }}
+    <Button title="Press to schedule a notification"
+            onPress={async () => {
+              await schedulePushNotification();
+            }}
     />
    </View>
   );
