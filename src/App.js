@@ -19,7 +19,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <TextInput
-        style={{ height: 40, borderColor: 'gray', borderWidth: 1, marginBottom: 16 }}
+        style={{ height: 40, borderColor: 'gray', borderWidth: 1, marginBottom: 5 }}
         placeholder="URL을 입력하세요."
         onChangeText={handleUrlChange}
         value={url}
