@@ -54,7 +54,7 @@ const ServerTime = () => {
       alignItems: 'center',
       justifyContent: 'space-around',
     }}>
-    <Text>Your expo push token: {expoPushToken}</Text>
+    {/* <Text>Your expo push token: {expoPushToken}</Text> */}
     <View style={{ alignItems: 'center', justifyContent: 'center' }}>
       <Text>Title: {notification && notification.request.content.title} </Text>
       <Text>Body: {notification && notification.request.content.body}</Text>

@@ -18,13 +18,15 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <TextInput
-        style={{ height: 40, borderColor: 'gray', borderWidth: 1, marginBottom: 5 }}
-        placeholder="URL을 입력하세요."
-        onChangeText={handleUrlChange}
-        value={url}
-      />
-      <Button title="입력" onPress={handlePress} />
+      <View style={{flexDirection: 'row'}}>
+        <TextInput
+          style={{ height: 40, borderColor: 'gray', borderWidth: 1, marginBottom: 5 }}
+          placeholder="URL을 입력하세요."
+          onChangeText={handleUrlChange}
+          value={url}
+        />
+        <Button title="입력" onPress={handlePress} />
+      </View>
       <ServerTime />
       <StatusBar style="auto" />
     </View>
@@ -34,6 +36,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    marginTop: 50,
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
