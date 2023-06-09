@@ -20,7 +20,7 @@ export default function App() {
     <View style={styles.container}>
       <View style={{flexDirection: 'row'}}>
         <TextInput
-          style={{ height: 40, borderColor: 'gray', borderWidth: 1, marginBottom: 5 }}
+          style={{ width: 200, height: 40, borderColor: 'gray', borderWidth: 1, marginBottom: 5 }}
           placeholder="URL을 입력하세요."
           onChangeText={handleUrlChange}
           value={url}
