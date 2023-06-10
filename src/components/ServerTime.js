@@ -75,7 +75,7 @@ const ServerTime = () => {
 async function schedulePushNotification() {
   await Notifications.scheduleNotificationAsync({
     content: {
-      title: "You've got mail! 📬",
+      title: "서버 시간 알림📬",
       body: 'Here is the notification body',
       data: { data: 'goes here' },
     },
