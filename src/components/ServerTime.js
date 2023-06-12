@@ -45,9 +45,6 @@ const ServerTime = () => {
   }, []);
 
   return (
-    // <View>
-    //   <Text>서버 시간: {currentTime.toLocaleString()}</Text>
-    // </View>
     <View
     style={{
       flex: 1,
