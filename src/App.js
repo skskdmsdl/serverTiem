@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, TextInput, Button, Alert } from 'react-native';
+import { StyleSheet, View, TextInput, Button, Alert } from 'react-native';
 
 import ServerTime from './components/ServerTime';
 
