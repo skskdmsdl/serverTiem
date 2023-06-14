@@ -12,7 +12,7 @@ export default function App() {
   };
 
   const handlePress = () => {
-    // URL 처리 로직을 추가할 수 있습니다.
+    // URL 처리 로직을 추가
     Alert.alert('입력한 URL: ', url);
   };
 
