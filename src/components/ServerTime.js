@@ -3,7 +3,6 @@ import { View, Text, Button, Platform } from 'react-native';
 import * as Notifications from 'expo-notifications';
 import * as Device from 'expo-device';
 
-
 Notifications.setNotificationHandler({
   handleNotification: async () => ({
     shouldShowAlert: true,
@@ -72,7 +71,7 @@ const ServerTime = () => {
 async function schedulePushNotification() {
   await Notifications.scheduleNotificationAsync({
     content: {
-      title: "서버 시간 알림📬",
+      title: "서버 시간 알림 📬",
       body: currentTime.toLocaleString(),
       data: { data: 'goes here' },
     },
