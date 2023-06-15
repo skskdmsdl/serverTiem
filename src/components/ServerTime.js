@@ -73,7 +73,7 @@ async function schedulePushNotification() {
   await Notifications.scheduleNotificationAsync({
     content: {
       title: "서버 시간 알림📬",
-      body: 'Here is the notification body',
+      body: currentTime.toLocaleString(),
       data: { data: 'goes here' },
     },
     trigger: { seconds: 2 },
