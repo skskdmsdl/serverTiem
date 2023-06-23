@@ -6,6 +6,7 @@ import ServerTime from './components/ServerTime';
 
 export default function App() {
   const [url, setUrl] = useState('');
+  const [serverTime, setServerTime] = useState('');
 
   const handleUrlChange = (text) => {
     setUrl(text);
@@ -14,6 +15,19 @@ export default function App() {
   const handlePress = () => {
     // URL 처리 로직을 추가
     Alert.alert('입력한 URL: ', url);
+  };
+
+  /* 서버타임 가져오기 */
+  const fetchServerTime = async () => {
+    try {
+      const response = await axios.get(url);
+      const serverDate = new Date(response.headers.date);
+      const serverTime = serverDate.toLocaleTimeString();
+      setServerTime(serverTime);
+    } catch (error) {
+      console.error(error);
+      setServerTime('Error fetching server time');
+    }
   };
 
   return (
