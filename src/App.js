@@ -12,11 +12,6 @@ export default function App() {
     setUrl(text);
   };
 
-  // const handlePress = () => {
-  //   // URL 처리 로직을 추가
-  //   Alert.alert('입력한 URL: ', url);
-  // };
-
   /* 서버타임 가져오기 */
   const fetchServerTime = async () => {
     try {
