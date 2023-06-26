@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View, TextInput, Button, Alert } from 'react-native';
+import axios from 'axios';
 
 import ServerTime from './components/ServerTime';
 
