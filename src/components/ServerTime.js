@@ -11,7 +11,7 @@ Notifications.setNotificationHandler({
   }),
 });
 
-const ServerTime = () => {
+const ServerTime = (serverTime) => {
   const [currentTime, setCurrentTime] = useState(new Date());
   const [expoPushToken, setExpoPushToken] = useState('');
   const [notification, setNotification] = useState(false);
@@ -58,6 +58,7 @@ const ServerTime = () => {
     </View>
     <View>
       <Text>서버 시간: {currentTime.toLocaleString()}</Text>
+      <Text>서버 시간: {serverTime.toLocaleString()}</Text>
     </View>
     <Button title="Press to schedule a notification"
             onPress={async () => {

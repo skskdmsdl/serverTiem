@@ -37,7 +37,7 @@ export default function App() {
         />
         <Button title="입력" onPress={fetchServerTime} />
       </View>
-      <ServerTime />
+      <ServerTime serverTime={serverTime} />
       <StatusBar style="auto" />
     </View>
   );
