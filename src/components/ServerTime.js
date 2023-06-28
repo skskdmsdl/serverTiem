@@ -57,7 +57,7 @@ const ServerTime = (serverTime) => {
       <Text>Data: {notification && JSON.stringify(notification.request.content.data)}</Text>
     </View>
     <View>
-      <Text>서버 시간: {currentTime.toLocaleString()}</Text>
+      <Text>현재 시간: {currentTime.toLocaleString()}</Text>
       <Text>서버 시간: {serverTime.toLocaleString()}</Text>
     </View>
     <Button title="Press to schedule a notification"
